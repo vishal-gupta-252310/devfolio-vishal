@@ -14,7 +14,9 @@
     "rootDir": "./src",
     "allowJs": true,
     "resolveJsonModule": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   },
   "exclude": ["vite.config.ts", "node_modules"]
 }
