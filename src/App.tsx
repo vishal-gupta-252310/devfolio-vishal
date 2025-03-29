@@ -2,10 +2,17 @@
 import React from 'react';
 
 // styles
-import './style/index.css';
+import './app.scss';
 
 // components
-import { About, Footer, Header, Skills, Testomonial, Work } from './container/index.tsx';
+import {
+  About,
+  Footer,
+  Header,
+  Skills,
+  Testimonial,
+  Work,
+} from './container/index.tsx';
 import { Navbar } from './components/index.tsx';
 
 /**
@@ -14,16 +21,16 @@ import { Navbar } from './components/index.tsx';
  */
 const App = () => {
   return (
-    <div className='app'>
+    <div className="app">
       <Navbar />
       <Header />
       <About />
       <Work />
       <Skills />
-      <Testomonial />
+      <Testimonial />
       <Footer />
     </div>
-  )
+  );
 };
 
 export default App;
