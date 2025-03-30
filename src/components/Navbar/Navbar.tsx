@@ -11,7 +11,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import MobileDrawer from '../MobileDrawer/MobileDrawer.tsx';
 
 // constants
-import { Images, NavbarMenu } from '../../constants/index.tsx';
+import { IMAGES, NAVBAR_MENU } from '../../constants/index.tsx';
 
 const Navbar = () => {
   const [isMobileDrawer, setIsMobileDrawer] = useState(false);
@@ -26,10 +26,10 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={Images.logo} alt="logo" />
+        <img src={IMAGES.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {NavbarMenu.map((item) => (
+        {NAVBAR_MENU.map((item) => (
           <li key={`link-${item.title}`} className="app__flex p-text">
             <div />
             <a href={`#${item.title}`}>{item.title}</a>

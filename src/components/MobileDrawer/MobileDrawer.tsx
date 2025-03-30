@@ -31,7 +31,9 @@ const MobileDrawer = ({
           <ul>
             {NavbarMenu.map((item) => (
               <li key={item.title} className="app__flex p-text">
-                <a href={`#${item.title}`}>{item.title}</a>
+                <a href={`#${item.title}`} onClick={onClose}>
+                  {item.title}
+                </a>
               </li>
             ))}
           </ul>
