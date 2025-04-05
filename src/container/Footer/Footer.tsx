@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
     email: '',
     message: '',
   });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [isRequesting, setIsRequesting] = useState(false);
+  const [isFormSubmitted] = useState(false);
+  const [isRequesting] = useState(false);
 
   /**
    * To handle change input
@@ -39,18 +39,9 @@ const Footer: React.FC = () => {
    */
   const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    setIsRequesting(true);
-
-    const contact = {
-      _type: 'contact',
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-    };
-
-    console.log(contact);
-    setIsRequesting(false);
-    setIsFormSubmitted(true);
+    alert(
+      'Thank you for contacting me but this functionality is not available yet you can contact me on my phone number.'
+    );
   };
 
   return (
@@ -63,7 +54,7 @@ const Footer: React.FC = () => {
             href={`mailto:${PORTFOLIO_OWNER_PROFILE.email}`}
             className="p-text"
           >
-            {PORTFOLIO_OWNER_PROFILE.email}
+            &nbsp;&nbsp;&nbsp;{PORTFOLIO_OWNER_PROFILE.email}
           </a>
         </div>
         <div className="app__footer-card">

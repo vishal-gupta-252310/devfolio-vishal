@@ -26,23 +26,23 @@ const PORTFOLIO_OWNER_SOCIAL_MEDIA = [
   {
     title: 'LinkedIn',
     icon: <FaLinkedin />,
-    link: 'https://www.linkedin.com/in/vishal-gupta-798675150/'
+    link: 'https://www.linkedin.com/in/vishal-gupta-798675150/',
   },
   {
     title: 'GitHub',
     icon: <FaGithub />,
-    link: 'https://github.com/vishal-gupta-252310'
+    link: 'https://github.com/vishal-gupta-252310',
   },
   {
     title: 'Twitter',
     icon: <FaTwitter />,
-    link: 'https://twitter.com/vishal_gupta_25'
+    link: 'https://twitter.com/vishal_gupta_25',
   },
   {
     title: 'Portfolio',
     icon: <FaLink />,
-    link: 'https://vishal-folio.netlify.app/'
-  }
+    link: 'https://vishal-folio.netlify.app/',
+  },
 ];
 
 /**
@@ -67,7 +67,7 @@ const PORTFOLIO_OWNER_DESIGNATION = [
     image: Images.about04,
     description:
       'Certified by Meta and IITM in React development, with strong focus on clean code, testing (Cypress/Jest), and scalable solutions.',
-  }
+  },
 ];
 
 /**
@@ -264,7 +264,7 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
         name: 'Software Engineer II',
         company: 'Logiciel Solutions',
         desc: 'Optimized React application performance using lazy loading and React.memo, improving user retention. Collaborated with backend teams to ensure seamless API integration and data flow.',
-      }
+      },
     ],
   },
   {
@@ -279,7 +279,7 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
         name: 'Software Engineer Intern',
         company: 'Logiciel Solutions',
         desc: 'Migrated 15+ Angular modules to React, improving code maintainability and reducing redundancy. Built reusable React components, cutting development time by 25%.',
-      }
+      },
     ],
   },
   {
@@ -289,9 +289,9 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
         name: 'Software Engineer Intern',
         company: 'Logiciel Solutions',
         desc: 'Migrated 15+ Angular modules to React, improving code maintainability and reducing redundancy. Built reusable React components, cutting development time by 25%.',
-      }
+      },
     ],
-  }
+  },
 ];
 
 /**
@@ -313,24 +313,24 @@ const PORTFOLIO_OWNER_APPS_TYPES = [
  */
 const PORTFOLIO_OWNER_PROJECTS = [
   {
-    image: Images.about01,
+    image: Images.project1,
     title: 'Leap (formely JobProgress)',
     description:
       'Optimized React SaaS platform performance through code-splitting and lazy loading, reducing load times by 15%. Implemented user onboarding tutorials and real-time Firebase sync. Enhanced collaboration with analytics tracking for engagement metrics.',
     tags: [
       'React',
-      'TypeScript', 
+      'TypeScript',
       'Redux',
       'Material-UI',
       'API Integration',
-      'Performance Optimization'
+      'Performance Optimization',
     ],
     link: 'https://www.jobprogress.com/app/#/',
     type: 'React',
   },
   {
-    image: Images.about02,
-    title: 'YouTube Clone (API-Focused)', 
+    image: Images.project2,
+    title: 'YouTube Clone (API-Focused)',
     description:
       'Developed full-stack YouTube clone with Node.js REST API handling video uploads, user auth and comments. Built CRUD operations for user profiles and video data. Implemented MongoDB storage and Postman testing for reliability.',
     tags: [
@@ -339,28 +339,28 @@ const PORTFOLIO_OWNER_PROJECTS = [
       'MongoDB',
       'RESTful API',
       'Authentication',
-      'CRUD Operations'
+      'CRUD Operations',
     ],
     link: 'https://youtube-clone.example.com/',
     codeLink: 'https://github.com/vishalgupta/youtube-clone',
     type: 'Node.js',
   },
   {
-    image: Images.about03,
+    image: Images.project3,
     title: 'Personal Portfolio',
-    description: 
+    description:
       'Created responsive portfolio website with dynamic animations and interactive project showcases. Implemented dark/light theme toggle functionality. Optimized performance achieving 98/100 Lighthouse score through best practices.',
     tags: [
       'React',
       'Framer Motion',
-      'Responsive Design', 
+      'Responsive Design',
       'Dark/Light Theme',
-      'Performance Optimization'
+      'Performance Optimization',
     ],
     link: 'https://vishal-folio.netlify.app/',
     codeLink: 'https://github.com/vishal-gupta-252310/devfolio-vishal',
     type: 'React',
-  }
+  },
 ];
 
 /**
@@ -381,7 +381,7 @@ const PORTFOLIO_OWNER_TESTIMONIALS = [
     company: 'Logiciel Solutions',
     feedback:
       'Working with Vishal has been a pleasure. His attention to detail and commitment to best practices have significantly improved our codebase.',
-  }
+  },
 ];
 
 /**
@@ -393,20 +393,20 @@ const PORTFOLIO_OWNER_CERTIFICATIONS = [
     title: 'Meta React Developer Certification',
     organization: 'Coursera',
     year: '2024',
-    image: Images.react_new
+    image: Images.react_new,
   },
   {
     title: 'Namaste React',
     organization: 'Akshay Saini',
     year: '2023',
-    image: Images.react_new
+    image: Images.react_new,
   },
   {
     title: 'GUVI React Certification',
     organization: 'IITM Partnership',
     year: '2022',
-    image: Images.react_new
-  }
+    image: Images.react_new,
+  },
 ];
 
 /**
@@ -417,7 +417,7 @@ const PORTFOLIO_OWNER_EDUCATION = {
   degree: 'Bachelor of Computer Applications (BCA)',
   institution: 'I.K. Gujral Punjab Technical University',
   period: '2017 – 2020',
-  score: '74%'
+  score: '74%',
 };
 
 /**
@@ -426,17 +426,13 @@ const PORTFOLIO_OWNER_EDUCATION = {
  */
 const PORTFOLIO_OWNER_BRANDS = [
   {
-    image: Images.logiciel,
-    company: 'Logiciel Solutions',
-  },
-  {
     image: Images.react_new,
     company: 'Meta',
   },
   {
     image: Images.css,
     company: 'IITM',
-  }
+  },
 ];
 
 /**
@@ -457,5 +453,5 @@ export {
   PORTFOLIO_OWNER_TESTIMONIALS,
   PORTFOLIO_OWNER_BRANDS,
   PORTFOLIO_OWNER_CERTIFICATIONS,
-  PORTFOLIO_OWNER_EDUCATION
+  PORTFOLIO_OWNER_EDUCATION,
 };

@@ -31,8 +31,13 @@ import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
+// Project images - using appropriate tech images instead of random photos
+import project1 from '../assets/leap.png';
+import project2 from '../assets/node.png'; // Node.js project (YouTube clone)
+import project3 from '../assets/portfolio.png'; // Portfolio project
+
 // Profile and branding
-import profile from '../assets/profile.png';
+import profile from '../assets/my.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
@@ -81,6 +86,11 @@ export default {
   about03,
   about04,
 
+  // Project images
+  project1,
+  project2,
+  project3,
+
   // Profile and branding
   profile,
   circle,
@@ -94,5 +104,5 @@ export default {
   nb,
   skype,
   spotify,
-  logiciel
+  logiciel,
 };

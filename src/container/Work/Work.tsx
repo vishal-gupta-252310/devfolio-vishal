@@ -105,16 +105,18 @@ const Work: React.FC = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                {item.codeLink && <a href={item.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ opacity: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    <AiFillGithub />
-                  </motion.div>
-                </a>}
+                {item.codeLink && (
+                  <a href={item.codeLink} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ opacity: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{ duration: 0.25 }}
+                      className="app__flex"
+                    >
+                      <AiFillGithub />
+                    </motion.div>
+                  </a>
+                )}
               </motion.div>
             </div>
 

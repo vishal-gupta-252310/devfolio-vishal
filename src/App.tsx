@@ -13,7 +13,7 @@ import {
   Testimonial,
   Work,
 } from './container/index.tsx';
-import { Navbar } from './components/index.tsx';
+import { Navbar, FloatingButton } from './components/index.tsx';
 
 /**
  * Main Component of the application
@@ -29,6 +29,10 @@ const App = () => {
       <Skills />
       <Testimonial />
       <Footer />
+      <FloatingButton
+        downloadUrl="/vishal_gupta_cv.pdf"
+        tooltipText="Download Resume"
+      />
     </div>
   );
 };

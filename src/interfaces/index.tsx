@@ -78,5 +78,5 @@ export type {
   Brand,
   Project,
   NavbarType,
-  SocialMedia
+  SocialMedia,
 };

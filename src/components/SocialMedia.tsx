@@ -10,7 +10,9 @@ import { SocialMedia as SocialMediaType } from '../interfaces/index.tsx';
  * @returns
  */
 const SocialMedia: React.FC = () => {
-  const [socialMedia] = useState<SocialMediaType[]>(PORTFOLIO_OWNER_SOCIAL_MEDIA);
+  const [socialMedia] = useState<SocialMediaType[]>(
+    PORTFOLIO_OWNER_SOCIAL_MEDIA
+  );
 
   return (
     <div className="app__social">
