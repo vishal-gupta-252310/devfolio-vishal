@@ -331,6 +331,44 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
   }
 ]
 
+const PORTFOLIO_OWNER_TESTIMONIALS = [
+  {
+    image: Images.html,
+    name: 'John Doe',
+    company: 'Logiciel Solutions',
+    feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+  },
+  {
+    image: Images.css,
+    name: 'John Smith',
+    company: 'Logiciel Solutions',
+    feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+  }
+]
+
+const PORTFOLIO_OWNER_BRANDS = [
+  {
+    image: Images.html,
+    company: 'Logiciel Solutions',
+  },
+  {
+    image: Images.css,
+    company: 'Logiciel Solutions',
+  },
+  {
+    image: Images.javascript,
+    company: 'Logiciel Solutions',
+  },
+  {
+    image: Images.react,
+    company: 'Logiciel Solutions',
+  },
+  {
+    image: Images.node,
+    company: 'Logiciel Solutions',
+  }
+]
+
 // export
 export {
   Images as IMAGES,
@@ -342,5 +380,7 @@ export {
   PORTFOLIO_OWNER_PROJECTS,
   PORTFOLIO_OWNER_APPS_TYPES,
   PORTFOLIO_OWNER_SKILLS,
-  PORTFOLIO_OWNER_EXPERIENCE
+  PORTFOLIO_OWNER_EXPERIENCE,
+  PORTFOLIO_OWNER_TESTIMONIALS,
+  PORTFOLIO_OWNER_BRANDS
 };
