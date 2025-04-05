@@ -1,13 +1,13 @@
 import React from 'react';
 
 // components
-import { AppWrap } from '../../wrapper/index.tsx';
+import { AppWrap, MotionWrap } from '../../wrapper/index.tsx';
 
 // styles
 import './about.scss';
 
 import { motion } from 'framer-motion';
-import { PORTFOLIO_OWNER_SKILLS } from '../../constants/index.tsx';
+import { PORTFOLIO_OWNER_DESIGNATION } from '../../constants/index.tsx';
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
       </h2>
 
       <div className="app__profiles">
-        {PORTFOLIO_OWNER_SKILLS.map((item, index) => (
+        {PORTFOLIO_OWNER_DESIGNATION.map((item, index) => (
           <motion.div
             key={`${item.title}${index}`}
             className="app__profile-item"
@@ -40,4 +40,4 @@ const About = () => {
   );
 };
 
-export default AppWrap({ Component: About, idName: 'about', classNames: '' });
+export default AppWrap({ Component: MotionWrap({ Component: About, classNames: 'app__about' }), idName: 'about', classNames: 'app__whitebg' });

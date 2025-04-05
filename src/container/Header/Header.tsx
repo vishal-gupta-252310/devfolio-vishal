@@ -11,7 +11,7 @@ import './header.scss';
 import {
   IMAGES,
   PORTFOLIO_OWNER_NAME,
-  PORTFOLIO_OWNER_SKILLS,
+  PORTFOLIO_OWNER_DESIGNATION,
   PORTFOLIO_OWNER_TECH_MASTERY,
 } from '../../constants/index.tsx';
 
@@ -73,7 +73,7 @@ const Header = () => {
             </div>
           </div>
           <div className="tag-cmp app__flex">
-            {PORTFOLIO_OWNER_SKILLS.map((skill, index) => (
+            {PORTFOLIO_OWNER_DESIGNATION.map((skill, index) => (
               <p key={`skill-${index}`} className="p-text">
                 {skill.title}
               </p>

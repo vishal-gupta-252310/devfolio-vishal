@@ -1,12 +1,12 @@
 // import images
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaReact } from 'react-icons/fa';
 import Images from './Images.tsx';
 import { NavbarMenu } from './NavbarMenu.tsx';
 import { BsInstagram, BsTwitter } from 'react-icons/bs';
 
 // portfolio data
 const PORTFOLIO_OWNER_NAME = 'Vishal Gupta';
-const PORTFOLIO_OWNER_SKILLS = [
+const PORTFOLIO_OWNER_DESIGNATION = [
   {
     title: 'Web Developer',
     description:
@@ -190,14 +190,157 @@ const PORTFOLIO_OWNER_PROJECTS = [
   },
 ];
 
+const PORTFOLIO_OWNER_SKILLS = [
+  {
+    title: 'React',
+    icon: Images.react,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Node.js',
+    icon: Images.node,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Sass',
+    icon: Images.sass,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'TypeScript',
+    icon: Images.typescript,
+    bgColor: '#edf2f8',
+  },
+  // {
+  //   title: 'MongoDB',
+  //   icon: Images.mongodb,
+  //   bgColor: '#edf2f8',
+  // },
+  // {
+  //   title: 'Express JS',
+  //   icon: Images.express,
+  //   bgColor: '#edf2f8',
+  // },
+  {
+    title: 'Python',
+    icon: Images.python,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'C++',
+    icon: Images.cpp,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'API',
+    icon: Images.api,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Git',
+    icon: Images.git,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'GraphQL',
+    icon: Images.graphql,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'HTML5',
+    icon: Images.html,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'CSS3',
+    icon: Images.css,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'JavaScript',
+    icon: Images.javascript,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Figma',
+    icon: Images.figma,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Flutter',
+    icon: Images.flutter,
+    bgColor: '#edf2f8',
+  },
+  // {
+  //   title: 'Spotify',
+  //   icon: Images.spotify,
+  //   bgColor: '#edf2f8',
+  // },
+]
+
+const PORTFOLIO_OWNER_EXPERIENCE = [
+  {
+    year: '2022',
+    works: [
+      {
+        name: 'React Developer',
+        company: 'Logiciel Solutions',
+        desc: 'React is a JavaScript library for building user interfaces.',
+      },
+      {
+        name: 'Frontend Developer',
+        company: 'Logiciel Solutions',
+        desc: 'I am a frontend developer with a passion for building user-friendly and efficient web applications.',
+      }
+    ]
+  },
+  {
+    year: '2023',
+    works: [
+      {
+        name: 'Full Stack Developer',
+        company: 'Logiciel Solutions',
+        desc: 'I am a full stack developer with a passion for building user-friendly and efficient web applications.',
+      },
+      {
+        name: 'Backend Developer',
+        company: 'Logiciel Solutions',
+        desc: 'I am a backend developer with a passion for building user-friendly and efficient web applications.',
+      }
+    ]
+  },
+  {
+    year: '2024',
+    works: [
+      {
+        name: 'React Developer',
+        company: 'Logiciel Solutions',
+        desc: 'React is a JavaScript library for building user interfaces.',
+      }
+    ]
+  },
+  {
+    year: '2025',
+    works: [
+      {
+        name: 'React Developer',
+        company: 'Logiciel Solutions',
+        desc: 'React is a JavaScript library for building user interfaces.',
+      }
+    ]
+  }
+]
+
 // export
 export {
   Images as IMAGES,
   NavbarMenu as NAVBAR_MENU,
   PORTFOLIO_OWNER_NAME,
-  PORTFOLIO_OWNER_SKILLS,
+  PORTFOLIO_OWNER_DESIGNATION,
   PORTFOLIO_OWNER_TECH_MASTERY,
   PORTFOLIO_OWNER_SOCIAL_MEDIA,
   PORTFOLIO_OWNER_PROJECTS,
   PORTFOLIO_OWNER_APPS_TYPES,
+  PORTFOLIO_OWNER_SKILLS,
+  PORTFOLIO_OWNER_EXPERIENCE
 };

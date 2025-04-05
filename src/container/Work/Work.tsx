@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 
 // components
-import { AppWrap } from '../../wrapper/index.tsx';
+import { AppWrap, MotionWrap } from '../../wrapper/index.tsx';
 
 // constants
 import {
@@ -120,4 +120,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap({ Component: Work, idName: 'work', classNames: '' });
+export default AppWrap({ Component: MotionWrap({ Component: Work, classNames: 'app__works' }), idName: 'work', classNames: 'app__primarybg' });
