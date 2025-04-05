@@ -4,22 +4,26 @@ import mobile from '../assets/mobile.png';
 
 // Technology stack icons
 import api from '../assets/api.png';
-import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
-import flutter from '../assets/flutter.png';
 import git from '../assets/git.png';
-import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
-import javascript from '../assets/javascript.png';
-import mu5 from '../assets/mu5.png';
+import javascript_new from '../assets/javascript_new.png';
 import node from '../assets/node.png';
-import python from '../assets/python.png';
-import react from '../assets/react.png';
+import react_new from '../assets/react_new.png';
 import redux from '../assets/redux.png';
-import sass from '../assets/sass.png';
+import sass_new from '../assets/sass_new.png';
 import typescript from '../assets/typescript.png';
-import vue from '../assets/vue.png';
+import angular_new from '../assets/angular_new.png';
+import express from '../assets/express.png';
+import cypress from '../assets/cypress.png';
+import jest from '../assets/jest.png';
+import tailwind from '../assets/tailwind.png';
+import materialui from '../assets/materialui.png';
+import bootstrap from '../assets/bootstrap.png';
+import framer from '../assets/framer.png';
+import mongodb from '../assets/mongodb.png';
+import vscode from '../assets/vscode.png';
 
 // About section images
 import about01 from '../assets/about01.png';
@@ -40,6 +44,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import logiciel from '../assets/logiciel.svg';
 
 // Group exports by sections
 export default {
@@ -49,22 +54,26 @@ export default {
 
   // Technology stack
   api,
-  cpp,
   css,
   figma,
-  flutter,
   git,
-  graphql,
   html,
-  javascript,
-  mu5,
+  javascript_new,
   node,
-  python,
-  react,
+  react_new,
   redux,
-  sass,
+  sass_new,
   typescript,
-  vue,
+  angular_new,
+  express,
+  cypress,
+  jest,
+  tailwind,
+  materialui,
+  bootstrap,
+  framer,
+  mongodb,
+  vscode,
 
   // About section
   about01,
@@ -85,4 +94,5 @@ export default {
   nb,
   skype,
   spotify,
+  logiciel
 };

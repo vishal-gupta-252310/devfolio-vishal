@@ -1,10 +1,44 @@
 // react icons
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
-import { BsInstagram, BsTwitter } from 'react-icons/bs';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 // constants
 import Images from './Images.tsx';
 import { NavbarMenu } from './NavbarMenu.tsx';
+
+/**
+ * Portfolio Owner Profile
+ * Personal and professional contact details
+ */
+const PORTFOLIO_OWNER_PROFILE = {
+  name: 'Vishal Gupta',
+  designation: 'Frontend Developer | React & Angular Specialist',
+  profile: Images.profile,
+  email: 'vishalgupta252310@gmail.com',
+  phone: '+91 8725 972310',
+  address: 'Ludhiana, Punjab, India',
+};
+
+/**
+ * Social Media Profiles
+ * Links to professional social media accounts
+ */
+const PORTFOLIO_OWNER_SOCIAL_MEDIA = [
+  {
+    title: 'LinkedIn',
+    icon: <FaLinkedin />,
+    link: 'https://linkedin.com/in/vishal-gupta-798675150'
+  },
+  {
+    title: 'GitHub',
+    icon: <FaGithub />,
+    link: 'https://github.com/vishalgupta'
+  },
+  {
+    title: 'Portfolio',
+    icon: <FaLinkedin />,
+    link: 'https://vishal-folio.netlify.app/'
+  }
+];
 
 /**
  * Portfolio Owner Designations
@@ -12,35 +46,23 @@ import { NavbarMenu } from './NavbarMenu.tsx';
  */
 const PORTFOLIO_OWNER_DESIGNATION = [
   {
-    title: 'Web Developer',
+    title: 'Frontend Developer',
     description:
-      'Specialized in creating responsive and interactive web applications using modern technologies and best practices.',
+      'Frontend Developer with 2+ years of experience in building high-performance web applications using React and Angular. Currently expanding expertise into Node.js for full-stack development.',
     image: Images.about01,
   },
   {
-    title: 'Software Engineer',
+    title: 'React & Angular Specialist',
     image: Images.about02,
     description:
-      'Experienced in developing robust software solutions with focus on scalability, maintainability, and clean code principles.',
+      'Specialized in creating responsive and interactive web applications using React and Angular frameworks with modern architecture patterns.',
   },
   {
-    title: 'Full Stack Developer',
-    image: Images.about03,
-    description:
-      'Proficient in both frontend and backend development, delivering end-to-end solutions with seamless integration.',
-  },
-  {
-    title: 'MERN Stack Developer',
+    title: 'Certified Developer',
     image: Images.about04,
     description:
-      'Expert in building full-stack applications using MongoDB, Express.js, React, and Node.js with modern architecture patterns.',
-  },
-  {
-    title: 'Freelancer',
-    image: Images.about04,
-    description:
-      'Skilled in managing independent projects, client communication, and delivering high-quality solutions within deadlines.',
-  },
+      'Certified by Meta and IITM in React development, with strong focus on clean code, testing (Cypress/Jest), and scalable solutions.',
+  }
 ];
 
 /**
@@ -51,26 +73,18 @@ const PORTFOLIO_OWNER_TECH_MASTERY = [
   {
     title: 'React',
     description:
-      'Proficient in building modern, responsive web applications using React. Experienced with hooks, state management, and component architecture.',
-    image: Images.react,
+      'Proficient in building modern, responsive web applications using React. Experienced with hooks, state management (Redux, Context API), and component architecture.',
+    image: Images.react_new,
     mastery: 90,
     marginTop: '1rem',
   },
   {
-    title: 'Node.js',
+    title: 'Angular',
     description:
-      'Skilled in developing scalable backend services and APIs using Node.js. Experienced with Express.js and RESTful architecture.',
-    image: Images.node,
-    mastery: 50,
-    margin: '2rem',
-  },
-  {
-    title: 'Sass',
-    description:
-      'Expert in creating maintainable and modular styles using Sass. Proficient with mixins, variables, and responsive design patterns.',
-    image: Images.sass,
+      'Skilled in developing applications using Angular framework, with experience in migrating Angular modules to React.',
+    image: Images.angular_new,
     mastery: 70,
-    margin: '3rem',
+    margin: '2rem',
   },
   {
     title: 'TypeScript',
@@ -80,133 +94,21 @@ const PORTFOLIO_OWNER_TECH_MASTERY = [
     mastery: 60,
     marginTop: 0,
   },
-];
-
-/**
- * Social Media Profiles
- * Links to professional social media accounts
- */
-const PORTFOLIO_OWNER_SOCIAL_MEDIA = [
   {
-    title: 'Facebook',
-    icon: <FaFacebook />,
-  },
-  {
-    title: 'Twitter',
-    icon: <BsTwitter />,
-  },
-  {
-    title: 'Instagram',
-    icon: <BsInstagram />,
-  },
-  {
-    title: 'LinkedIn',
-    icon: <FaLinkedin />,
-  },
-];
-
-/**
- * Project Categories
- * Types of applications and technologies for portfolio filtering
- */
-const PORTFOLIO_OWNER_APPS_TYPES = [
-  'Web App',
-  'Mobile App',
-  'Desktop App',
-  'API',
-  'React JS',
-  'All',
-];
-
-/**
- * Portfolio Projects
- * Showcase of completed projects with details and links
- */
-const PORTFOLIO_OWNER_PROJECTS = [
-  {
-    image: Images.about03,
-    title: 'Leap Formely JobProgress',
+    title: 'SaaS',
     description:
-      'Specialized in creating responsive and interactive web applications using modern technologies and best practices.',
-    tags: [
-      'React',
-      'JavaScript',
-      'CSS3',
-      'HTML5',
-      'Responsive Design',
-      'API Integration',
-    ],
-    link: 'https://jobprogress.leapformely.com/',
-    codeLink: 'https://github.com/vishalgupta2002/jobprogress',
-    type: 'Web App',
+      'Expertise in developing scalable and maintainable SaaS applications using React and Angular.',
+    image: Images.sass_new,
+    mastery: 50,
+    margin: '3rem',
   },
   {
-    image: Images.about03,
-    title: 'Custom Report Builder',
+    title: 'Node.js',
     description:
-      'Specialized in creating responsive and interactive web applications using modern technologies and best practices.',
-    tags: [
-      'Node JS',
-      'Express JS',
-      'MongoDB',
-      'RESTful API',
-      'Authentication',
-      'Authorization',
-    ],
-    link: 'https://jobprogress.leapformely.com/',
-    codeLink: 'https://github.com/vishalgupta2002/jobprogress',
-    type: 'Web App',
-  },
-  {
-    image: Images.about03,
-    title: 'Portfolio Website',
-    description:
-      'Specialized in creating responsive and interactive web applications using modern technologies and best practices.',
-    tags: [
-      'Node JS',
-      'Express JS',
-      'MongoDB',
-      'RESTful API',
-      'Authentication',
-      'Authorization',
-    ],
-    link: 'https://jobprogress.leapformely.com/',
-    codeLink: 'https://github.com/vishalgupta2002/jobprogress',
-    type: 'Web App',
-  },
-  {
-    image: Images.about03,
-    title: 'Movie App',
-    description:
-      'Specialized in creating responsive and interactive web applications using modern technologies and best practices.',
-    tags: [
-      'Node JS',
-      'Express JS',
-      'MongoDB',
-      'RESTful API',
-      'Authentication',
-      'Authorization',
-    ],
-    link: 'https://jobprogress.leapformely.com/',
-    codeLink: 'https://github.com/vishalgupta2002/jobprogress',
-    type: 'Web App',
-  },
-  {
-    title: 'Modern CMS',
-    image: Images.about03,
-    description:
-      'Specialized in creating responsive and interactive web applications using modern technologies and best practices.',
-    tags: [
-      'React',
-      'JavaScript',
-      'CSS3',
-      'HTML5',
-      'Responsive Design',
-      'API Integration',
-    ],
-    link: 'https://jobprogress.leapformely.com/',
-    codeLink: 'https://github.com/vishalgupta2002/jobprogress',
-    type: 'Mobile App',
+      'Currently expanding expertise into Node.js for full-stack development, with experience in building RESTful APIs using Express.js.',
+    image: Images.node,
+    mastery: 10,
+    margin: '3rem',
   },
 ];
 
@@ -215,19 +117,10 @@ const PORTFOLIO_OWNER_PROJECTS = [
  * List of technologies and tools with associated icons
  */
 const PORTFOLIO_OWNER_SKILLS = [
+  // Languages
   {
-    title: 'React',
-    icon: Images.react,
-    bgColor: '#edf2f8',
-  },
-  {
-    title: 'Node.js',
-    icon: Images.node,
-    bgColor: '#edf2f8',
-  },
-  {
-    title: 'Sass',
-    icon: Images.sass,
+    title: 'JavaScript',
+    icon: Images.javascript_new,
     bgColor: '#edf2f8',
   },
   {
@@ -235,24 +128,9 @@ const PORTFOLIO_OWNER_SKILLS = [
     icon: Images.typescript,
     bgColor: '#edf2f8',
   },
-  // {
-  //   title: 'MongoDB',
-  //   icon: Images.mongodb,
-  //   bgColor: '#edf2f8',
-  // },
-  // {
-  //   title: 'Express JS',
-  //   icon: Images.express,
-  //   bgColor: '#edf2f8',
-  // },
   {
-    title: 'Python',
-    icon: Images.python,
-    bgColor: '#edf2f8',
-  },
-  {
-    title: 'C++',
-    icon: Images.cpp,
+    title: 'SaaS',
+    icon: Images.sass_new,
     bgColor: '#edf2f8',
   },
   {
@@ -261,13 +139,8 @@ const PORTFOLIO_OWNER_SKILLS = [
     bgColor: '#edf2f8',
   },
   {
-    title: 'Git',
-    icon: Images.git,
-    bgColor: '#edf2f8',
-  },
-  {
-    title: 'GraphQL',
-    icon: Images.graphql,
+    title: 'Redux',
+    icon: Images.redux,
     bgColor: '#edf2f8',
   },
   {
@@ -281,8 +154,90 @@ const PORTFOLIO_OWNER_SKILLS = [
     bgColor: '#edf2f8',
   },
   {
-    title: 'JavaScript',
-    icon: Images.javascript,
+    title: 'Node.js',
+    icon: Images.node,
+    bgColor: '#edf2f8',
+  },
+
+  // Frameworks
+  {
+    title: 'React',
+    icon: Images.react_new,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Angular',
+    icon: Images.angular_new,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Express.js',
+    icon: Images.express,
+    bgColor: '#edf2f8',
+  },
+
+  // State Management
+  {
+    title: 'Redux',
+    icon: Images.redux,
+    bgColor: '#edf2f8',
+  },
+
+  // Testing
+  {
+    title: 'Cypress',
+    icon: Images.cypress,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Jest',
+    icon: Images.jest,
+    bgColor: '#edf2f8',
+  },
+
+  // UI/UX
+  {
+    title: 'Tailwind CSS',
+    icon: Images.tailwind,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Material-UI',
+    icon: Images.materialui,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Bootstrap',
+    icon: Images.bootstrap,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Framer Motion',
+    icon: Images.framer,
+    bgColor: '#edf2f8',
+  },
+
+  // Database
+  {
+    title: 'MongoDB',
+    icon: Images.mongodb,
+    bgColor: '#edf2f8',
+  },
+
+  // Tools
+  {
+    title: 'Git',
+    icon: Images.git,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'Postman',
+    icon: Images.api,
+    bgColor: '#edf2f8',
+  },
+  {
+    title: 'VS Code',
+    icon: Images.vscode,
     bgColor: '#edf2f8',
   },
   {
@@ -290,16 +245,6 @@ const PORTFOLIO_OWNER_SKILLS = [
     icon: Images.figma,
     bgColor: '#edf2f8',
   },
-  {
-    title: 'Flutter',
-    icon: Images.flutter,
-    bgColor: '#edf2f8',
-  },
-  // {
-  //   title: 'Spotify',
-  //   icon: Images.spotify,
-  //   bgColor: '#edf2f8',
-  // },
 ];
 
 /**
@@ -308,55 +253,109 @@ const PORTFOLIO_OWNER_SKILLS = [
  */
 const PORTFOLIO_OWNER_EXPERIENCE = [
   {
-    year: '2022',
+    year: '2024',
     works: [
       {
-        name: 'React Developer',
+        name: 'Software Engineer II',
         company: 'Logiciel Solutions',
-        desc: 'React is a JavaScript library for building user interfaces.',
-      },
-      {
-        name: 'Frontend Developer',
-        company: 'Logiciel Solutions',
-        desc: 'I am a frontend developer with a passion for building user-friendly and efficient web applications.',
-      },
+        desc: 'Optimized React application performance using lazy loading and React.memo, improving user retention. Collaborated with backend teams to ensure seamless API integration and data flow.',
+      }
     ],
   },
   {
     year: '2023',
     works: [
       {
-        name: 'Full Stack Developer',
+        name: 'Associate Software Engineer',
         company: 'Logiciel Solutions',
-        desc: 'I am a full stack developer with a passion for building user-friendly and efficient web applications.',
+        desc: 'Integrated third-party libraries (e.g., Google Maps) into a SaaS platform, enhancing user functionality. Achieved 90% test coverage for React components using Cypress and Jest. Mentored junior developers on React best practices and debugging workflows.',
       },
       {
-        name: 'Backend Developer',
+        name: 'Software Engineer Intern',
         company: 'Logiciel Solutions',
-        desc: 'I am a backend developer with a passion for building user-friendly and efficient web applications.',
-      },
+        desc: 'Migrated 15+ Angular modules to React, improving code maintainability and reducing redundancy. Built reusable React components, cutting development time by 25%.',
+      }
     ],
   },
   {
-    year: '2024',
+    year: '2022',
     works: [
       {
-        name: 'React Developer',
+        name: 'Software Engineer Intern',
         company: 'Logiciel Solutions',
-        desc: 'React is a JavaScript library for building user interfaces.',
-      },
+        desc: 'Migrated 15+ Angular modules to React, improving code maintainability and reducing redundancy. Built reusable React components, cutting development time by 25%.',
+      }
     ],
+  }
+];
+
+/**
+ * Project Categories
+ * Types of applications and technologies for portfolio filtering
+ */
+const PORTFOLIO_OWNER_APPS_TYPES = [
+  'React',
+  'TypeScript',
+  'Angular',
+  'Node.js',
+  'Full Stack',
+  'All',
+];
+
+/**
+ * Portfolio Projects
+ * Showcase of completed projects with details and links
+ */
+const PORTFOLIO_OWNER_PROJECTS = [
+  {
+    image: Images.about01,
+    title: 'Leap (formely JobProgress)',
+    description:
+      'Optimized React SaaS platform performance through code-splitting and lazy loading, reducing load times by 15%. Implemented user onboarding tutorials and real-time Firebase sync. Enhanced collaboration with analytics tracking for engagement metrics.',
+    tags: [
+      'React',
+      'TypeScript', 
+      'Redux',
+      'Material-UI',
+      'API Integration',
+      'Performance Optimization'
+    ],
+    link: 'https://www.jobprogress.com/app/#/',
+    type: 'React',
   },
   {
-    year: '2025',
-    works: [
-      {
-        name: 'React Developer',
-        company: 'Logiciel Solutions',
-        desc: 'React is a JavaScript library for building user interfaces.',
-      },
+    image: Images.about02,
+    title: 'YouTube Clone (API-Focused)', 
+    description:
+      'Developed full-stack YouTube clone with Node.js REST API handling video uploads, user auth and comments. Built CRUD operations for user profiles and video data. Implemented MongoDB storage and Postman testing for reliability.',
+    tags: [
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'RESTful API',
+      'Authentication',
+      'CRUD Operations'
     ],
+    link: 'https://youtube-clone.example.com/',
+    codeLink: 'https://github.com/vishalgupta/youtube-clone',
+    type: 'Node.js',
   },
+  {
+    image: Images.about03,
+    title: 'Personal Portfolio',
+    description: 
+      'Created responsive portfolio website with dynamic animations and interactive project showcases. Implemented dark/light theme toggle functionality. Optimized performance achieving 98/100 Lighthouse score through best practices.',
+    tags: [
+      'React',
+      'Framer Motion',
+      'Responsive Design', 
+      'Dark/Light Theme',
+      'Performance Optimization'
+    ],
+    link: 'https://vishal-folio.netlify.app/',
+    codeLink: 'https://github.com/vishal-gupta-252310/devfolio-vishal',
+    type: 'React',
+  }
 ];
 
 /**
@@ -366,19 +365,55 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
 const PORTFOLIO_OWNER_TESTIMONIALS = [
   {
     image: Images.html,
-    name: 'John Doe',
+    name: 'Project Manager',
     company: 'Logiciel Solutions',
     feedback:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      'Vishal consistently delivers high-quality code and is always willing to take on new challenges. His expertise in React has been invaluable to our team.',
   },
   {
     image: Images.css,
-    name: 'John Smith',
+    name: 'Senior Developer',
     company: 'Logiciel Solutions',
     feedback:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-  },
+      'Working with Vishal has been a pleasure. His attention to detail and commitment to best practices have significantly improved our codebase.',
+  }
 ];
+
+/**
+ * Certifications
+ * Professional certifications and courses completed
+ */
+const PORTFOLIO_OWNER_CERTIFICATIONS = [
+  {
+    title: 'Meta React Developer Certification',
+    organization: 'Coursera',
+    year: '2024',
+    image: Images.react_new
+  },
+  {
+    title: 'Namaste React',
+    organization: 'Akshay Saini',
+    year: '2023',
+    image: Images.react_new
+  },
+  {
+    title: 'GUVI React Certification',
+    organization: 'IITM Partnership',
+    year: '2022',
+    image: Images.react_new
+  }
+];
+
+/**
+ * Education
+ * Academic qualifications
+ */
+const PORTFOLIO_OWNER_EDUCATION = {
+  degree: 'Bachelor of Computer Applications (BCA)',
+  institution: 'I.K. Gujral Punjab Technical University',
+  period: '2017 – 2020',
+  score: '74%'
+};
 
 /**
  * Brands/Companies
@@ -386,39 +421,18 @@ const PORTFOLIO_OWNER_TESTIMONIALS = [
  */
 const PORTFOLIO_OWNER_BRANDS = [
   {
-    image: Images.html,
+    image: Images.logiciel,
     company: 'Logiciel Solutions',
+  },
+  {
+    image: Images.react_new,
+    company: 'Meta',
   },
   {
     image: Images.css,
-    company: 'Logiciel Solutions',
-  },
-  {
-    image: Images.javascript,
-    company: 'Logiciel Solutions',
-  },
-  {
-    image: Images.react,
-    company: 'Logiciel Solutions',
-  },
-  {
-    image: Images.node,
-    company: 'Logiciel Solutions',
-  },
+    company: 'IITM',
+  }
 ];
-
-/**
- * Contact Information
- * Personal and professional contact details
- */
-const PORTFOLIO_OWNER_PROFILE = {
-  name: 'Vishal Gupta',
-  designation: 'Software Engineer',
-  profile: Images.profile,
-  email: 'vishalgupta252310@gmail.com',
-  phone: '+91 (8725) 972-310',
-  address: 'H.no 53, Prem Vihar Colony, Ludhiana, Punjab, India 141007',
-};
 
 /**
  * Exports
@@ -427,14 +441,16 @@ const PORTFOLIO_OWNER_PROFILE = {
 export {
   Images as IMAGES,
   NavbarMenu as NAVBAR_MENU,
+  PORTFOLIO_OWNER_PROFILE,
+  PORTFOLIO_OWNER_SOCIAL_MEDIA,
   PORTFOLIO_OWNER_DESIGNATION,
   PORTFOLIO_OWNER_TECH_MASTERY,
-  PORTFOLIO_OWNER_SOCIAL_MEDIA,
   PORTFOLIO_OWNER_PROJECTS,
   PORTFOLIO_OWNER_APPS_TYPES,
   PORTFOLIO_OWNER_SKILLS,
   PORTFOLIO_OWNER_EXPERIENCE,
   PORTFOLIO_OWNER_TESTIMONIALS,
   PORTFOLIO_OWNER_BRANDS,
-  PORTFOLIO_OWNER_PROFILE,
+  PORTFOLIO_OWNER_CERTIFICATIONS,
+  PORTFOLIO_OWNER_EDUCATION
 };

@@ -53,7 +53,7 @@ interface Project {
   image: string;
   tags: string[];
   link: string;
-  codeLink: string;
+  codeLink?: string;
   type: string;
 }
 
