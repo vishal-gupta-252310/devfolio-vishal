@@ -369,6 +369,15 @@ const PORTFOLIO_OWNER_BRANDS = [
   }
 ]
 
+const PORTFOLIO_OWNER_PROFILE = {
+  name: 'Vishal Gupta',
+  designation: 'Software Engineer',
+  profile: Images.profile,
+  email: 'vishalgupta252310@gmail.com',
+  phone: '+91 (8725) 972-310',
+  address: 'H.no 53, Prem Vihar Colony, Ludhiana, Punjab, India 141007',
+}
+
 // export
 export {
   Images as IMAGES,
@@ -382,5 +391,6 @@ export {
   PORTFOLIO_OWNER_SKILLS,
   PORTFOLIO_OWNER_EXPERIENCE,
   PORTFOLIO_OWNER_TESTIMONIALS,
-  PORTFOLIO_OWNER_BRANDS
+  PORTFOLIO_OWNER_BRANDS,
+  PORTFOLIO_OWNER_PROFILE
 };
