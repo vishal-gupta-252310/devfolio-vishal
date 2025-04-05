@@ -18,5 +18,5 @@
     "allowImportingTsExtensions": true,
     "noEmit": true
   },
-  "exclude": ["vite.config.ts", "node_modules"]
+  "exclude": ["vite.config.ts", "node_modules", "dist", ".eslintrc.json"]
 }
