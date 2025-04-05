@@ -1,17 +1,20 @@
 // packages
-import React from 'react';
+import React, { useState } from 'react';
 
 // constants
 import { NAVBAR_MENU } from '../constants/index.tsx';
+import { NavbarType } from '../interfaces/index.tsx';
 
 /**
  * Navigation dots component to show the navigation dots
  * @param props
  */
-const NavigationDots = ({ active }: { active: string }) => {
+const NavigationDots: React.FC<{ active: string }> = ({ active }) => {
+  const [navbarMenu] = useState<NavbarType[]>(NAVBAR_MENU);
+
   return (
     <div className="app__navigation">
-      {NAVBAR_MENU.map((item, index) => (
+      {navbarMenu.map((item, index) => (
         <a
           href={`#${item.title}`}
           key={`link-${index}`}

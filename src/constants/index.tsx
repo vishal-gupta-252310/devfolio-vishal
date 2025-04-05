@@ -1,5 +1,5 @@
 // react icons
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTwitter, FaLink } from 'react-icons/fa';
 
 // constants
 import Images from './Images.tsx';
@@ -26,16 +26,21 @@ const PORTFOLIO_OWNER_SOCIAL_MEDIA = [
   {
     title: 'LinkedIn',
     icon: <FaLinkedin />,
-    link: 'https://linkedin.com/in/vishal-gupta-798675150'
+    link: 'https://www.linkedin.com/in/vishal-gupta-798675150/'
   },
   {
     title: 'GitHub',
     icon: <FaGithub />,
-    link: 'https://github.com/vishalgupta'
+    link: 'https://github.com/vishal-gupta-252310'
+  },
+  {
+    title: 'Twitter',
+    icon: <FaTwitter />,
+    link: 'https://twitter.com/vishal_gupta_25'
   },
   {
     title: 'Portfolio',
-    icon: <FaLinkedin />,
+    icon: <FaLink />,
     link: 'https://vishal-folio.netlify.app/'
   }
 ];

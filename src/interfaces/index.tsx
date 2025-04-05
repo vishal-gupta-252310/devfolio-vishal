@@ -57,6 +57,18 @@ interface Project {
   type: string;
 }
 
+// TypeScript type annotation for the social media
+interface NavbarType {
+  title: string;
+  link: string;
+}
+
+interface SocialMedia {
+  title: string;
+  icon: React.ReactNode;
+  link: string;
+}
+
 export type {
   Designation,
   TechMastery,
@@ -65,4 +77,6 @@ export type {
   Testimonial,
   Brand,
   Project,
+  NavbarType,
+  SocialMedia
 };
