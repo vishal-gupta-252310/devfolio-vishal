@@ -1,3 +1,7 @@
+/**
+ * Navigation Menu Items
+ * List of navigation menu items with their titles and corresponding links
+ */
 export const NavbarMenu = [
   {
     title: 'home',

@@ -1,20 +1,25 @@
-import React from 'react';
+// packages
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 // components
 import { AppWrap } from '../../wrapper/index.tsx';
 
-// styles
-import './header.scss';
-
 // constants
 import {
   IMAGES,
-  PORTFOLIO_OWNER_NAME,
+  PORTFOLIO_OWNER_PROFILE,
   PORTFOLIO_OWNER_DESIGNATION,
   PORTFOLIO_OWNER_TECH_MASTERY,
 } from '../../constants/index.tsx';
+import { Designation, TechMastery } from '../../interfaces/index.tsx';
 
+// styles
+import './header.scss';
+
+/**
+ * Scale variants for the header component
+ */
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
@@ -26,6 +31,12 @@ const scaleVariants = {
   },
 };
 
+/**
+ * Calculate the size of the circles based on the mastery and screen width
+ * @param mastery - The mastery level of the skill
+ * @param screenWidth - The width of the screen
+ * @returns The size of the circle
+ */
 const calculateCircleSize = (mastery: number, screenWidth: number) => {
   // Base size for mobile
   let baseSize = 80;
@@ -48,10 +59,15 @@ const calculateCircleSize = (mastery: number, screenWidth: number) => {
   return calculatedSize;
 };
 
-const Header = () => {
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+/**
+ * Header component to display the header section of the portfolio
+ */
+const Header: React.FC = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [designation] = useState<Designation[]>(PORTFOLIO_OWNER_DESIGNATION);
+  const [techMastery] = useState<TechMastery[]>(PORTFOLIO_OWNER_TECH_MASTERY);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -69,11 +85,11 @@ const Header = () => {
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello, I'm</p>
-              <h1 className="head-text">{PORTFOLIO_OWNER_NAME}</h1>
+              <h1 className="head-text">{PORTFOLIO_OWNER_PROFILE.name}</h1>
             </div>
           </div>
           <div className="tag-cmp app__flex">
-            {PORTFOLIO_OWNER_DESIGNATION.map((skill, index) => (
+            {designation.map((skill, index) => (
               <p key={`skill-${index}`} className="p-text">
                 {skill.title}
               </p>
@@ -102,7 +118,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {PORTFOLIO_OWNER_TECH_MASTERY.map((item, index) => {
+        {techMastery.map((item, index) => {
           const size = calculateCircleSize(item.mastery, windowWidth);
           return (
             <div

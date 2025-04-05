@@ -11,6 +11,11 @@ import { HiX } from 'react-icons/hi';
 // constants
 import { NavbarMenu } from '../../constants/NavbarMenu.tsx';
 
+/**
+ * Mobile drawer component to show the menu on mobile devices
+ * @param props
+ * @returns
+ */
 const MobileDrawer = ({
   onClose,
   isOpen,
@@ -27,7 +32,6 @@ const MobileDrawer = ({
           className="app__navbar-mobile-menu__container"
         >
           <HiX onClick={onClose} />
-
           <ul>
             {NavbarMenu.map((item) => (
               <li key={item.title} className="app__flex p-text">

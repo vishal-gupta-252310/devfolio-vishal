@@ -1,6 +1,8 @@
-// images
+// Contact/Information icons
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
+
+// Technology stack icons
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
@@ -19,15 +21,18 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 
+// About section images
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
+// Profile and branding
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
+// Brand/Client logos
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
 import asus from '../assets/asus.png';
@@ -36,9 +41,13 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+// Group exports by sections
 export default {
+  // Contact/Information
   email,
   mobile,
+
+  // Technology stack
   api,
   cpp,
   css,
@@ -56,13 +65,19 @@ export default {
   sass,
   typescript,
   vue,
+
+  // About section
   about01,
   about02,
   about03,
   about04,
+
+  // Profile and branding
   profile,
   circle,
   logo,
+
+  // Brand/Client logos
   adidas,
   amazon,
   asus,

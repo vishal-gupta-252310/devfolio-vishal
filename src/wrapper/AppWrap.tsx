@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavigationDots, SocialMedia } from '../components/index.tsx';
-import { PORTFOLIO_OWNER_NAME } from '../constants/index.tsx';
+import { PORTFOLIO_OWNER_PROFILE } from '../constants/index.tsx';
 
 const AppWrap = ({
   Component,
@@ -18,7 +18,7 @@ const AppWrap = ({
         <div className="app__wrapper app__flex">
           <Component />
           <div className="copyright">
-            <p className="p-text">{`© ${new Date().getFullYear()} ${PORTFOLIO_OWNER_NAME}`}</p>
+            <p className="p-text">{`© ${new Date().getFullYear()} ${PORTFOLIO_OWNER_PROFILE.name}`}</p>
             <p className="p-text">All rights reserved</p>
           </div>
         </div>

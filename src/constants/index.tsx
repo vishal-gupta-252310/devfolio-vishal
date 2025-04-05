@@ -1,11 +1,15 @@
-// import images
-import { FaFacebook, FaLinkedin, FaReact } from 'react-icons/fa';
-import Images from './Images.tsx';
-import { NavbarMenu } from './NavbarMenu.tsx';
+// react icons
+import { FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { BsInstagram, BsTwitter } from 'react-icons/bs';
 
-// portfolio data
-const PORTFOLIO_OWNER_NAME = 'Vishal Gupta';
+// constants
+import Images from './Images.tsx';
+import { NavbarMenu } from './NavbarMenu.tsx';
+
+/**
+ * Portfolio Owner Designations
+ * List of professional roles with descriptions and associated images
+ */
 const PORTFOLIO_OWNER_DESIGNATION = [
   {
     title: 'Web Developer',
@@ -39,6 +43,10 @@ const PORTFOLIO_OWNER_DESIGNATION = [
   },
 ];
 
+/**
+ * Technical Expertise
+ * Core technologies with proficiency levels and descriptions
+ */
 const PORTFOLIO_OWNER_TECH_MASTERY = [
   {
     title: 'React',
@@ -74,6 +82,10 @@ const PORTFOLIO_OWNER_TECH_MASTERY = [
   },
 ];
 
+/**
+ * Social Media Profiles
+ * Links to professional social media accounts
+ */
 const PORTFOLIO_OWNER_SOCIAL_MEDIA = [
   {
     title: 'Facebook',
@@ -93,6 +105,10 @@ const PORTFOLIO_OWNER_SOCIAL_MEDIA = [
   },
 ];
 
+/**
+ * Project Categories
+ * Types of applications and technologies for portfolio filtering
+ */
 const PORTFOLIO_OWNER_APPS_TYPES = [
   'Web App',
   'Mobile App',
@@ -102,6 +118,10 @@ const PORTFOLIO_OWNER_APPS_TYPES = [
   'All',
 ];
 
+/**
+ * Portfolio Projects
+ * Showcase of completed projects with details and links
+ */
 const PORTFOLIO_OWNER_PROJECTS = [
   {
     image: Images.about03,
@@ -190,6 +210,10 @@ const PORTFOLIO_OWNER_PROJECTS = [
   },
 ];
 
+/**
+ * Technical Skills
+ * List of technologies and tools with associated icons
+ */
 const PORTFOLIO_OWNER_SKILLS = [
   {
     title: 'React',
@@ -276,8 +300,12 @@ const PORTFOLIO_OWNER_SKILLS = [
   //   icon: Images.spotify,
   //   bgColor: '#edf2f8',
   // },
-]
+];
 
+/**
+ * Professional Experience
+ * Work history organized by year with role and company details
+ */
 const PORTFOLIO_OWNER_EXPERIENCE = [
   {
     year: '2022',
@@ -291,8 +319,8 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
         name: 'Frontend Developer',
         company: 'Logiciel Solutions',
         desc: 'I am a frontend developer with a passion for building user-friendly and efficient web applications.',
-      }
-    ]
+      },
+    ],
   },
   {
     year: '2023',
@@ -306,8 +334,8 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
         name: 'Backend Developer',
         company: 'Logiciel Solutions',
         desc: 'I am a backend developer with a passion for building user-friendly and efficient web applications.',
-      }
-    ]
+      },
+    ],
   },
   {
     year: '2024',
@@ -316,8 +344,8 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
         name: 'React Developer',
         company: 'Logiciel Solutions',
         desc: 'React is a JavaScript library for building user interfaces.',
-      }
-    ]
+      },
+    ],
   },
   {
     year: '2025',
@@ -326,26 +354,36 @@ const PORTFOLIO_OWNER_EXPERIENCE = [
         name: 'React Developer',
         company: 'Logiciel Solutions',
         desc: 'React is a JavaScript library for building user interfaces.',
-      }
-    ]
-  }
-]
+      },
+    ],
+  },
+];
 
+/**
+ * Client Testimonials
+ * Feedback from clients and collaborators
+ */
 const PORTFOLIO_OWNER_TESTIMONIALS = [
   {
     image: Images.html,
     name: 'John Doe',
     company: 'Logiciel Solutions',
-    feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+    feedback:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
   },
   {
     image: Images.css,
     name: 'John Smith',
     company: 'Logiciel Solutions',
-    feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-  }
-]
+    feedback:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+  },
+];
 
+/**
+ * Brands/Companies
+ * Organizations associated with the portfolio owner
+ */
 const PORTFOLIO_OWNER_BRANDS = [
   {
     image: Images.html,
@@ -366,9 +404,13 @@ const PORTFOLIO_OWNER_BRANDS = [
   {
     image: Images.node,
     company: 'Logiciel Solutions',
-  }
-]
+  },
+];
 
+/**
+ * Contact Information
+ * Personal and professional contact details
+ */
 const PORTFOLIO_OWNER_PROFILE = {
   name: 'Vishal Gupta',
   designation: 'Software Engineer',
@@ -376,13 +418,15 @@ const PORTFOLIO_OWNER_PROFILE = {
   email: 'vishalgupta252310@gmail.com',
   phone: '+91 (8725) 972-310',
   address: 'H.no 53, Prem Vihar Colony, Ludhiana, Punjab, India 141007',
-}
+};
 
-// export
+/**
+ * Exports
+ * All constants exported for use throughout the application
+ */
 export {
   Images as IMAGES,
   NavbarMenu as NAVBAR_MENU,
-  PORTFOLIO_OWNER_NAME,
   PORTFOLIO_OWNER_DESIGNATION,
   PORTFOLIO_OWNER_TECH_MASTERY,
   PORTFOLIO_OWNER_SOCIAL_MEDIA,
@@ -392,5 +436,5 @@ export {
   PORTFOLIO_OWNER_EXPERIENCE,
   PORTFOLIO_OWNER_TESTIMONIALS,
   PORTFOLIO_OWNER_BRANDS,
-  PORTFOLIO_OWNER_PROFILE
+  PORTFOLIO_OWNER_PROFILE,
 };

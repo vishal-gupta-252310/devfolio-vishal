@@ -1,6 +1,13 @@
+// packages
 import React from 'react';
+
+// constants
 import { NAVBAR_MENU } from '../constants/index.tsx';
 
+/**
+ * Navigation dots component to show the navigation dots
+ * @param props
+ */
 const NavigationDots = ({ active }: { active: string }) => {
   return (
     <div className="app__navigation">

@@ -1,9 +1,0 @@
-{
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
-  "plugins": ["react"],
-  "rules": {
-    "no-unused-vars": "warn",
-    "react/jsx-uses-react": "off",
-    "react/jsx-uses-vars": "warn"
-  }
-}

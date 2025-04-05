@@ -1,18 +1,34 @@
+// packages
 import React, { useState } from 'react';
-import { AppWrap, MotionWrap } from '../../wrapper/index.tsx';
-
 import { motion } from 'framer-motion';
 
+// react icons
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
+// components
+import { AppWrap, MotionWrap } from '../../wrapper/index.tsx';
+
+// constants
+import {
+  PORTFOLIO_OWNER_BRANDS,
+  PORTFOLIO_OWNER_TESTIMONIALS,
+} from '../../constants/index.tsx';
+import {
+  Brand,
+  Testimonial as TestimonialType,
+} from '../../interfaces/index.tsx';
 // styles
 import './testimonial.scss';
-import { PORTFOLIO_OWNER_BRANDS, PORTFOLIO_OWNER_TESTIMONIALS } from '../../constants/index.tsx';
 
-const Testimonial = () => {
+/**
+ * Testimonial component to display the testimonials of the portfolio owner
+ */
+const Testimonial: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [testimonials] = useState(PORTFOLIO_OWNER_TESTIMONIALS);
-  const [brands] = useState(PORTFOLIO_OWNER_BRANDS);
+  const [testimonials] = useState<TestimonialType[]>(
+    PORTFOLIO_OWNER_TESTIMONIALS
+  );
+  const [brands] = useState<Brand[]>(PORTFOLIO_OWNER_BRANDS);
   const test = testimonials[currentIndex];
 
   /**
@@ -21,7 +37,7 @@ const Testimonial = () => {
    */
   const handleClick = (index: number) => {
     setCurrentIndex(index);
-  }
+  };
 
   return (
     <>
@@ -39,10 +55,28 @@ const Testimonial = () => {
           </div>
 
           <div className="app__testimonial-btns app__flex">
-            <div className="app__flex" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
+            <div
+              className="app__flex"
+              onClick={() =>
+                handleClick(
+                  currentIndex === 0
+                    ? testimonials.length - 1
+                    : currentIndex - 1
+                )
+              }
+            >
               <HiChevronLeft />
             </div>
-            <div className="app__flex" onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
+            <div
+              className="app__flex"
+              onClick={() =>
+                handleClick(
+                  currentIndex === testimonials.length - 1
+                    ? 0
+                    : currentIndex + 1
+                )
+              }
+            >
               <HiChevronRight />
             </div>
           </div>
@@ -66,4 +100,11 @@ const Testimonial = () => {
   );
 };
 
-export default AppWrap({ Component: MotionWrap({ Component: Testimonial, classNames: 'app__testimonial' }), idName: 'testimonial', classNames: 'app__primarybg' });
+export default AppWrap({
+  Component: MotionWrap({
+    Component: Testimonial,
+    classNames: 'app__testimonial',
+  }),
+  idName: 'testimonial',
+  classNames: 'app__primarybg',
+});

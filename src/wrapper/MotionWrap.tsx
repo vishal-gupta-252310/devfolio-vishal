@@ -1,8 +1,12 @@
+// packages
 import React from 'react';
-import { PORTFOLIO_OWNER_NAME } from '../constants/index.tsx';
 import { motion } from 'framer-motion';
 
-
+/**
+ * To wrap the component with motion animation
+ * @param props
+ * @returns
+ */
 const MotionWrap = ({
   Component,
   classNames,

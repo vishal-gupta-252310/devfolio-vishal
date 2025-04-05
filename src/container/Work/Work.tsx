@@ -1,3 +1,4 @@
+// packages
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -15,22 +16,35 @@ import {
 
 // styles
 import './work.scss';
+import { Project } from '../../interfaces/index.tsx';
 
-const Work = () => {
+/**
+ * Work component to display the work of the portfolio owner
+ */
+const Work: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('all');
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-  const [filterWork, setFilterWork] = useState(PORTFOLIO_OWNER_PROJECTS);
+  const [animateCard, setAnimateCard] = useState<{
+    y: number;
+    opacity: number;
+  }>({ y: 0, opacity: 1 });
+  const [filterWork, setFilterWork] = useState<Project[]>(
+    PORTFOLIO_OWNER_PROJECTS
+  );
+  const [appTypes] = useState<string[]>(PORTFOLIO_OWNER_APPS_TYPES);
 
+  /**
+   * Handle the work filter
+   * @param item - The item to filter the work by
+   */
   const handleWorkFilter = (item: string) => {
     setActiveFilter(item);
-
     setAnimateCard({ y: 100, opacity: 0 });
-
     setTimeout(() => {
       setAnimateCard({ y: 0, opacity: 1 });
       if (item.toLowerCase() === 'all') {
         return setFilterWork(PORTFOLIO_OWNER_PROJECTS);
       }
+
       setFilterWork(
         PORTFOLIO_OWNER_PROJECTS.filter(
           (work) => work.type.toLowerCase() === item.toLowerCase()
@@ -45,7 +59,7 @@ const Work = () => {
         My Creative <span>Portfolio</span> Section
       </h2>
       <div className="app__work-filter">
-        {PORTFOLIO_OWNER_APPS_TYPES.map((item, index) => (
+        {appTypes.map((item, index) => (
           <div
             key={`${item}-${index}`}
             className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
@@ -120,4 +134,8 @@ const Work = () => {
   );
 };
 
-export default AppWrap({ Component: MotionWrap({ Component: Work, classNames: 'app__works' }), idName: 'work', classNames: 'app__primarybg' });
+export default AppWrap({
+  Component: MotionWrap({ Component: Work, classNames: 'app__works' }),
+  idName: 'work',
+  classNames: 'app__primarybg',
+});

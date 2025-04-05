@@ -1,15 +1,23 @@
-import React from 'react';
+// packages
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 // components
 import { AppWrap, MotionWrap } from '../../wrapper/index.tsx';
 
+// constants
+import { PORTFOLIO_OWNER_DESIGNATION } from '../../constants/index.tsx';
+import { Designation } from '../../interfaces/index.tsx';
+
 // styles
 import './about.scss';
 
-import { motion } from 'framer-motion';
-import { PORTFOLIO_OWNER_DESIGNATION } from '../../constants/index.tsx';
+/**
+ * About component to display information about the portfolio owner
+ */
+const About: React.FC = () => {
+  const [designation] = useState<Designation[]>(PORTFOLIO_OWNER_DESIGNATION);
 
-const About = () => {
   return (
     <div className="app__about">
       <h2 className="head-text">
@@ -18,7 +26,7 @@ const About = () => {
       </h2>
 
       <div className="app__profiles">
-        {PORTFOLIO_OWNER_DESIGNATION.map((item, index) => (
+        {designation.map((item, index) => (
           <motion.div
             key={`${item.title}${index}`}
             className="app__profile-item"
@@ -40,4 +48,8 @@ const About = () => {
   );
 };
 
-export default AppWrap({ Component: MotionWrap({ Component: About, classNames: 'app__about' }), idName: 'about', classNames: 'app__whitebg' });
+export default AppWrap({
+  Component: MotionWrap({ Component: About, classNames: 'app__about' }),
+  idName: 'about',
+  classNames: 'app__whitebg',
+});
